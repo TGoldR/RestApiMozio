@@ -1,0 +1,30 @@
+language: python
+python: 3.5
+sudo: false
+install: pip install tox
+script: tox
+env:
+  - TOXENV=py27-django17-drf31
+  - TOXENV=py27-django17-drf32
+  - TOXENV=py33-django17-drf31
+  - TOXENV=py33-django17-drf32
+  - TOXENV=py34-django17-drf31
+  - TOXENV=py34-django17-drf32
+  - TOXENV=py27-django18-drf31
+  - TOXENV=py27-django18-drf32
+  - TOXENV=py27-django18-drf33
+  - TOXENV=py33-django18-drf31
+  - TOXENV=py33-django18-drf32
+  - TOXENV=py33-django18-drf33
+  - TOXENV=py34-django18-drf31
+  - TOXENV=py34-django18-drf32
+  - TOXENV=py34-django18-drf33
+  - TOXENV=py27-django19-drf31
+  - TOXENV=py27-django19-drf32
+  - TOXENV=py27-django19-drf33
+  - TOXENV=py34-django19-drf31
+  - TOXENV=py34-django19-drf32
+  - TOXENV=py34-django19-drf33
+  - TOXENV=py35-django19-drf31
+  - TOXENV=py35-django19-drf32
+  - TOXENV=py35-django19-drf33
